@@ -23,3 +23,5 @@ import { AppService } from './app.service';
   providers: [AppService],
 })
 export class AppModule {}
+
+// docker run -d --name notebooks_database -e MYSQL_ROOT_PASSWORD=admin -e MYSQL_DATABASE=notebooks -p 3306:3306 -v notebooks_data:/var/lib/mysql mysql
